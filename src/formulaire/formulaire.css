@@ -1,0 +1,79 @@
+.containerForm{
+    width: 350px;
+    height: 350px;
+    background-color: /*#2B3133*/ #185359;
+    border-radius: 30px;
+}
+
+h1{
+    color: #F2BE22;
+}
+
+.containerInfo{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.name, .description{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    margin: 30px 20px 5px 20px;
+}
+
+.description{
+    margin: 15px 20px 5px 20px;
+}
+
+.labelName, .labelDescription{
+    background-color: transparent;
+    color: #F2BE22;
+    margin-bottom: 5px;
+    font-size: 12pt
+}
+
+.inputDescription, .inputName{
+    background-color: transparent;
+    color: #927e59;
+    padding-left: 20px;
+    outline: none;
+}
+
+.inputDescription:hover, .inputName:hover{
+    outline:1px solid #F29F05;
+}
+
+.inputName{
+    border-radius: 20px;
+    height: 50px;
+    border: 1px solid #F2BE22;
+}
+
+.inputDescription{
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid #F2BE22;
+}
+
+.valider{
+    border-radius: 50px;
+    color: #0B2B40;
+    font-weight: bolder;
+    border:1px solid #0B2B40;
+    background-color: #F2BE22;
+    width: 160px;
+    height: 50px;
+    margin: 15px 95px 10px 95px;
+    font-size: 12pt;
+    text-align: center;
+}
+
+.valider:hover{
+    color: #F2BE22;
+    background-color: #0B2B40;
+    cursor: pointer;
+}
