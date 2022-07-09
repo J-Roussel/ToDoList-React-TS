@@ -1,0 +1,98 @@
+.containerCard{
+    background-color: white;
+    width: 340px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+
+.titreCard{
+    background-color: transparent;
+    color: #0B2B40;
+    letter-spacing: 2px;
+    padding: 5px 50px 5px 50px;
+}
+
+.card{
+    width: 320px;
+    min-height: 80px;
+    background-color: transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 5px 12px 5px 8px;
+
+}
+
+
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+}
+
+h4{
+    background-color: transparent;
+    color: #0B2B40;
+}
+
+.buttonAction{
+    background-color: transparent;
+}
+
+.buttonCompleted{
+    background-color: white;
+    font-weight: 600;
+    padding: 4px 10px 4px 10px;
+    color: #0B2B40;
+    border: none;
+}
+
+.buttonRemove{
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: #8C1F28;
+    margin-left: 5px;
+    padding: 4px 10px 4px 10px;
+
+}
+
+.buttonRemove:hover{
+    background-color: #D92525;
+    cursor: pointer;
+}
+
+.idInputTaskLeft:hover{
+    color: #A6874E;
+    cursor: pointer;
+}
+
+.taskDescription{
+    background-color: transparent;
+    padding: 10px 15px 15px 15px;
+}
+
+.addDescription{
+    width: 92%; 
+    background-color: transparent;
+    color: #0B2B40;
+    border-top: 1px solid #0B2B40;
+    margin-top: 40px;
+    margin-left: 4%;
+    margin-right: auto;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addDescription:hover{
+    cursor: pointer;
+}
+
+span{
+    font-size: 10pt;
+    font-weight: 1000;
+    background-color: transparent;
+}
