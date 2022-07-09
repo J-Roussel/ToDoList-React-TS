@@ -12,7 +12,6 @@ const App:FC<{}> = ():JSX.Element => {
   const [valueName, setValueName] = useState<string>("");
   const [valueDescri, setValueDescri] = useState<string>("");
 
-
   //useState for the ToDoList
   const [toDoList, setToDo] = useState<ITask[]>([]);
 
@@ -30,9 +29,12 @@ const App:FC<{}> = ():JSX.Element => {
   }
 
 
-
-
-
+  //function that allows to remove the task from its card
+  const removeTask = (taskNameToDelete:string):void => {
+    setToDo(toDoList.filter((task:ITask) => {
+      return (task.name !== taskNameToDelete);
+    }));
+  }
 
 
   return (
@@ -74,7 +76,7 @@ const App:FC<{}> = ():JSX.Element => {
                         <h4>{task.name}</h4>
                         <div className="buttonAction">
                             <input className="buttonCompleted" id="idInputTaskLeft" type="button" value="completed"/>
-                            <input className="buttonRemove"  type="button" value="remove"/>
+                            <input className="buttonRemove"  type="button" value="remove"onClick={()=>{removeTask(task.name)}}/>
                         </div>
                       </div>
                       <p className="taskDescription">{task.description}</p>
